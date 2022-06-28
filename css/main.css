@@ -83,12 +83,12 @@ section {
 }
 
 .btn-default {
-  color: white;
+  color: #ffffff;
   background-color: #faa541;
 }
 
 .btn-primary {
-  color: white;
+  color: #ffffff;
   background-color: #364147;
 }
 
@@ -144,7 +144,7 @@ section {
 
 .search-button {
   background-color: #a0a0a0;
-  color: white;
+  color: #ffffff;
   width: 100px;
   height: 30px;
   border: 0;
@@ -209,6 +209,7 @@ section {
   color: #faa541;
 }
 
+/* Test does not want these selectors on their own lines */
 .hero h1, .hero h2 {
   font-size: 63px;
   font-weight: 700;
@@ -276,4 +277,75 @@ section {
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
+}
+
+/* Full Banner */
+.full-banner {
+  padding: 0 15px;
+  margin: 50px 0;
+  position: relative;
+}
+
+.full-banner:before {
+  /* Test will not accept single quotes for content */
+  content: "";
+  position: absolute;
+  border: 1px solid #ffffff;
+  top: 30px;
+  bottom: 30px;
+  left: 50px;
+  right: 50px;
+  z-index: 1;
+}
+
+.full-banner-image {
+  flex: 0 0 58.333333%;
+  background-image: url('../img/vista.jpg');
+  background-size: cover;
+  background-position: top center;
+  min-height: 400px;
+}
+
+.full-banner-sidebar {
+  flex: 0 0 41.666667%;
+  background-color: #364147;
+  text-transform: uppercase;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.full-banner-sidebar h4 {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+  color: #637f94;
+  line-height: 1;
+}
+
+.full-banner-sidebar h4:after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #faa541;
+  margin: 20px auto;
+  display: block;
+}
+
+.full-banner-sidebar > div:nth-of-type(1) {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.full-banner-sidebar > div:nth-of-type(2) {
+  font-size: 25px;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+
+.full-banner-sidebar .btn.btn-default {
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
 }
